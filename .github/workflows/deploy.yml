@@ -23,6 +23,6 @@ jobs:
         password: ${{ vars.FTP_PASSWORD }}
         protocol: ftp  # Change to 'sftp' if using SFTP
         port: ${{ vars.FTP_PORT }}
-        local-dir: './dist'  # Adjust this to your build directory
+        local-dir: './dist/'  # Adjust this to your build directory
         server-dir: ${{ vars.FTP_PATH }}
         state-name: '.ftp-deploy-sync-state.json' # Optional for incremental deploys
